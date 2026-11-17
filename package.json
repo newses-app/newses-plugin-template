@@ -31,7 +31,8 @@
     "format": "prettier --write .",
     "test": "vitest run",
     "check": "npm run lint && npm run typecheck && prettier --check . && npm test",
-    "prepublishOnly": "npm run check && npm run build"
+    "prepublishOnly": "npm run check",
+    "prepack": "npm run build"
   },
   "peerDependencies": {
     "@newses/plugin-api": "^0.1.0",
